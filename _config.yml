@@ -9,4 +9,4 @@ googlytics: 39558466-1
 
 # Build settings
 markdown: rdiscount
-permalink: pretty
+permalink: /blog/:year/:month/:day/:title/
