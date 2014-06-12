@@ -10,3 +10,4 @@ googlytics: 39558466-1
 # Build settings
 markdown: rdiscount
 permalink: /blog/:year/:month/:day/:title/
+comments: true
