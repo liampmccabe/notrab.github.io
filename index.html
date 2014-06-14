@@ -48,7 +48,7 @@ layout: default
         {% for post in site.posts limit:1 %}
         <h2>{{ post.title }}</h2>
 
-        <p>Yeah, I do that with my stupidness. I was all of history's great robot actors - Acting Unit 0.8; Thespomat; David Duchovny! I've got to find a way to escape the horrible ravages of youth. Suddenly, I'm going to the bathroom like clockwork, every three hours. And those jerks at Social Security stopped sending me checks. <a href="{{ post.url | prepend: site.baseurl }}">Continue Reading</a>.</p>
+        <p>{{ post.content | strip_html | truncatewords:55}} <a href="{{ post.url | prepend: site.baseurl }}">Continue Reading</a>.</p>
         {% endfor %}
       </div>
   </div>
