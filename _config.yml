@@ -1,7 +1,7 @@
 # Site settings
 title: "Ruby on Rails Development, Newcastle upon Tyne"
 email: jamie@codethisway.com
-description: "Jamie Barton specialises in Ruby on Rails 3 & 4 web applications using AngularJS, CoffeeScript, SCSS, RSpec and APIs."
+description: "Jamie Barton specialises in Ruby on Rails 3 & 4, AngularJS, CoffeeScript, SCSS, RSpec and building APIs."
 baseurl: ""
 url: "http://codethisway.com"
 timezone: Europe/London
