@@ -2,6 +2,96 @@
 layout: default
 ---
 
-<div class="home">
-  <h2>Hi, I'm Jamie Barton.</h2>
-</div>
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-overlay"></div>
+
+  <div class="hero-content wrapper">
+    <h2>Hi, I'm Jamie Barton</h2>
+    <h3>A Ruby on Rails Engineer</h3>
+
+    <a href="/contact" class="btn">Get in touch</a>
+    <span>Avaliable from August 2014</span>
+  </div>
+</section>
+
+<section class="intro">
+  <div class="wrapper">
+    <img src="{{ "/img/avatar.png" | prepend: site.baseurl }}" alt="" />
+    <h4>Responsive websites and web applications are my thing.</h4>
+    <p>I live in Newcastle upon Tyne with my beautiful financée.</p>
+  </div>
+</section>
+
+<section class="clients">
+  <div class="wrapper">
+    <h5>Clients</h5>
+
+    <ul class="horizontal">
+      <li><img src="{{ "/img/logos/waypoint.png" | prepend: site.baseurl }}" alt="Waypoint" /></li>
+      <li><img src="{{ "/img/logos/norsound.png" | prepend: site.baseurl }}" alt="Norsound" /></li>
+      <li><img src="{{ "/img/logos/tiga.png" | prepend: site.baseurl }}" alt="TIGA" /></li>
+      <li><img src="{{ "/img/logos/party.png" | prepend: site.baseurl }}" alt="Party Contacts" /></li>
+    </ul>
+  </div>
+</section>
+
+<section class="blog clearfix">
+  <div class="left">
+    <div class="blog-image"></div>
+  </div>
+
+  <div class="right">
+      <div class="inner">
+        <h5>From the Blog</h5>
+
+        {% for post in site.posts limit:1 %}
+        <h2>{{ post.title }}</h2>
+
+        <p>Yeah, I do that with my stupidness. I was all of history's great robot actors - Acting Unit 0.8; Thespomat; David Duchovny! I've got to find a way to escape the horrible ravages of youth. Suddenly, I'm going to the bathroom like clockwork, every three hours. And those jerks at Social Security stopped sending me checks. <a href="{{ post.url | prepend: site.baseurl }}">Continue Reading</a>.</p>
+        {% endfor %}
+      </div>
+  </div>
+</section>
+
+<section class="testimonials clearfix">
+  <div class="wrapper">
+    <h5>Testimonials</h5>
+
+    <div class="testimonial-block left">
+      <div class="inner">
+        <div class="message">
+          <p>Yeah, I do that with my stupidness. I was all of history's great robot actors - Acting Unit 0.8; Thespomat; David Duchovny! I've got to find a way to escape the horrible ravages of youth. Suddenly, I'm going to the bathroom like clockwork, every three hours. And those jerks at Social Security stopped sending me checks. Now 'I'' have to pay ''them'!</p>
+        </div>
+
+        <div class="person">
+          <img src="{{ "/img/tavatar.png" | prepend: site.baseurl }}" alt="Jesus Christ" />
+          <span class="name">Sammy Isseyegh</span>
+          <span class="role">Client, Outingly</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="testimonial-block right">
+      <div class="inner">
+        <div class="message">
+          <p>Yeah, I do that with my stupidness. I was all of history's great robot actors - Acting Unit 0.8; Thespomat; David Duchovny! I've got to find a way to escape the horrible ravages of youth. Suddenly, I'm going to the bathroom like clockwork, every three hours. And those jerks at Social Security stopped sending me checks. Now 'I'' have to pay ''them'!</p>
+        </div>
+
+        <div class="person">
+          <img src="{{ "/img/tavatar2.png" | prepend: site.baseurl }}" alt="Jesus Christ" />
+          <span class="name">Matthew Martin</span>
+          <span class="role">Co-worker, Gatherr</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+<section class="boom">
+  <div class="wrapper">
+
+  </div>
+</section>
