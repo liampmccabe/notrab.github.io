@@ -116,6 +116,7 @@ body {
 }
 
 a {
+  color: #6f3a6c;
     text-decoration: none;
     -webkit-transition: all 0.2s ease;
 }
@@ -286,6 +287,7 @@ h6 {
         color: white;
         text-align: center;
         text-shadow: 0 1px 1px rgba(0,0,0,0.2);
+        height: 100vh;
     }
 
         .hero-bg {
