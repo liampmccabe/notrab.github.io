@@ -220,7 +220,7 @@ h6 {
     .main-header.bg {
         position: fixed;
         top: 0;
-        -webkit-transform: translateY(-64px);
+        /*-webkit-transform: translateY(-64px);*/
         background: rgba(0,0,0,0.9);
         -webkit-transition: all 0.2s ease;
     }
@@ -393,20 +393,32 @@ h6 {
                 display: block;
                 width: 33.333%;
                 text-align: center;
+                padding: 70px 10px 0;
+                box-sizing: border-box;
+                background-position: 50% 0;
+                background-repeat: no-repeat;
             }
 
-                .skills ul li img {
-                    margin: 0 0 15px;
-                }
+              .skills ul li.development {
+                background-image: url(../img/code.png);
+              }
+
+              .skills ul li.consultancy {
+                background-image: url(../img/consulting.png);
+              }
+
+              .skills ul li.mvp {
+                background-image: url(../img/browser.png);
+              }
 
                 .skills ul li h4 {
-                    margin: 0;
-                    font-size: 24px;
-                    font-weight: 400;
+                  margin: 0;
+                  font-size: 24px;
+                  font-weight: 400;
                 }
 
                 .skills ul li p {
-                    margin: 0;
+                  margin: 0;
                 }
 
     .blog {
@@ -436,6 +448,10 @@ h6 {
 
             .blog p {
                 margin: 0;
+            }
+
+            .blog p.continue-reading {
+              margin-top: 15px;
             }
 
     .testimonials {

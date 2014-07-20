@@ -8,7 +8,7 @@ layout: default
 
   <div class="hero-content wrapper">
     <h2>Hi, I'm Jamie Barton</h2>
-    <h3>A Ruby on Rails Engineer</h3>
+    <h3>A Ruby on Rails Developer</h3>
 
     <a href="mailto: jamie@codethisway.com" class="btn">Get in touch</a>
     <span>Avaliable from August 2014</span>
@@ -17,8 +17,8 @@ layout: default
 
 <section class="intro">
   <div class="wrapper">
-    <img src="{{ "/img/avatar.png" | prepend: site.baseurl }}" alt="" />
-    <h4>Responsive websites and web applications are my thing.</h4>
+    <img src="{{ "/img/avatar.png" | prepend: site.baseurl }}" alt="Jamie Barton" />
+    <h4>Responsive websites &amp; web applications are my thing.</h4>
     <p>I live in Newcastle upon Tyne with my beautiful fiancée.</p>
   </div>
 </section>
@@ -38,7 +38,9 @@ layout: default
         {% for post in site.posts limit:1 %}
         <h2>{{ post.title }}</h2>
 
-        <p>{{ post.content | strip_html | truncatewords:55}} <a href="{{ post.url | prepend: site.baseurl }}">Continue Reading</a>.</p>
+        <p>{{ post.content | strip_html | truncatewords:55}}</p>
+
+        <p class="continue-reading"><a href="{{ post.url | prepend: site.baseurl }}">Continue Reading &rarr;</a></p>
         {% endfor %}
       </div>
   </div>
