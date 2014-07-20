@@ -1,7 +1,7 @@
 # Site settings
-title: "Ruby on Rails Development, Newcastle upon Tyne"
+title: "Freelance Ruby on Rails Web Developer, Newcastle upon Tyne"
 email: jamie@codethisway.com
-description: "Jamie Barton specialises in Ruby on Rails 3 & 4, AngularJS, CoffeeScript, SCSS, RSpec and building APIs."
+description: "Jamie Barton specialises in Ruby on Rails, AngularJS, NodeJS and developing APIs."
 baseurl: ""
 url: "http://codethisway.com"
 timezone: Europe/London
