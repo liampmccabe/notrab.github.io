@@ -213,15 +213,23 @@ h6 {
         top: 0;
         z-index: 10;
         width: 100%;
+        -webkit-transform: translateY(0px);
         text-shadow: 0 1px 1px rgba(0,0,0,0.2);
+        -webkit-transition: all 0.2s ease;
+    }
+
+    .main-header.hidden {
+        -webkit-transform: translateY(-64px);
         -webkit-transition: all 0.2s ease;
     }
 
     .main-header.bg {
         position: fixed;
         top: 0;
-        /*-webkit-transform: translateY(-64px);*/
-        background: rgba(0,0,0,0.9);
+        text-shadow: none;
+        -webkit-transform: translateY(0px);
+        box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+        background: rgba(255,255,255,0.9);
         -webkit-transition: all 0.2s ease;
     }
 
@@ -234,6 +242,14 @@ h6 {
         .main-header.bg .main-nav li a {
             color: rgba(255,255,255,0.6);
             -webkit-transition: all 0.2s ease;
+        }
+
+        .main-header.bg .logo a {
+            color: #6f3a6c;
+        }
+
+        .main-header.bg .main-nav ul li a {
+            color: #777;
         }
 
         .logo {
@@ -272,13 +288,11 @@ h6 {
 
                     .main-nav li a {
                         color: #a887a5;
-                        -webkit-transform: scale(1);
                         -webkit-transition: all 0.2s ease;
                     }
 
                     .main-nav li a:hover {
                         color: white;
-                        -webkit-transform: scale(1.1);
                         -webkit-transition: all 0.2s ease;
                     }
 
@@ -324,6 +338,10 @@ h6 {
             padding: 250px 0 250px;
         }
 
+        .hero-content--page {
+            padding: 140px 0 100px;
+        }
+
             .hero h2 {
                 margin: 0;
                 color: #c4a1d3;
@@ -356,7 +374,7 @@ h6 {
         }
 
             .intro h4 {
-                margin: 10px 0 5px;
+                margin: 10px 0 0;
             }
 
             .intro p {
@@ -367,9 +385,8 @@ h6 {
             }
 
     .clients {
-        padding: 40px 0 50px;
+        padding: 60px 0 70px;
         text-align: center;
-        background: #fafafa;
         border-top: 1px #ddd solid;
     }
 
@@ -378,13 +395,13 @@ h6 {
     }
 
         .skills h5 {
-            padding: 60px 0 0;
+            padding: 70px 0 0;
             text-align: center;
         }
 
         .skills ul {
             margin: 0;
-            padding: 0 0 60px;
+            padding: 0 0 70px;
         }
 
             .skills ul li {
@@ -432,7 +449,6 @@ h6 {
             height: 500px;
             background: #eee url(../img/blog.png) center center no-repeat;
             background-size: cover;
-            background-attachment: fixed;
         }
 
         .blog .right .inner {
@@ -455,7 +471,7 @@ h6 {
             }
 
     .testimonials {
-        padding: 60px 0;
+        padding: 70px 0;
     }
 
         .testimonials h5 {
@@ -475,12 +491,37 @@ h6 {
             }
 
             .message {
+                position: relative;
                 padding: 20px;
                 border-radius: 5px;
                 margin-bottom: 20px;
                 border: 1px #ccc solid;
                 border-bottom: 1px #bbb solid;
                 box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+            }
+
+            .message:after, .message:before {
+                top: 100%;
+                left: 73px;
+                border: solid transparent;
+                content: " ";
+                height: 0;
+                width: 0;
+                position: absolute;
+                pointer-events: none;
+            }
+
+            .message:after {
+                border-color: rgba(255, 255, 255, 0);
+                border-top-color: #fff;
+                border-width: 6px;
+                margin-left: -6px;
+            }
+            .message:before {
+                border-color: rgba(221, 221, 221, 0);
+                border-top-color: #bbb;
+                border-width: 7px;
+                margin-left: -7px;
             }
 
                 .message p {
@@ -509,7 +550,7 @@ h6 {
                 }
 
     .boom {
-        padding: 50px 0;
+        padding: 50px 0 150px;
         text-align: center;
     }
 
@@ -533,7 +574,33 @@ h6 {
             }
 
 
+    .page-content {
+        padding: 70px 0;
+    }
 
+    .posts {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+        .post {
+            padding: 30px 0;
+            border-bottom: 1px #eee solid;
+        }
+
+            .post-date {
+                color: #777;
+                display: block;
+            }
+
+            .post-link {
+                font-size: 30px;
+            }
+
+    .rss-subscribe {
+        margin-top: 100px;
+    }
 
 
 
